@@ -1,4 +1,6 @@
 /datasets/*[!.py]
+datasets/*.npy
+datasets/*.json
 .ipynb_checkpoints
 __pycache__
 training/*
