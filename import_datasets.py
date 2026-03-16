@@ -14,6 +14,8 @@ for filename in os.listdir(dataset_path):
         # Process the dataset file
         data = np.load(file_path)
         X = data["X"]
+        X = X[:, :, None]
+        print(f"X shape: {X.shape}")
         dataset_name = filename[:-4]
         dataset_names.append(dataset_name)
         save_path = os.path.join(destination_path, dataset_name + ".npy")
